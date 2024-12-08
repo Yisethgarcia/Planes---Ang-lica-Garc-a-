@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.tabla-container {
+    display: flex;
+}
+
+.plan {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 60px;
+    width: 360px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan:not(:last-child) {
+    margin-right: -20px;
+}
+
+.plan.estandar {
+    background: linear-gradient(135deg, #0066ff, #00cc99);
+    color: #fff;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*Estilo para los títulos*/
+.plan h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.plan.basico h3 {
+    color: #0066ff; /*Azul para títulos de los planes básicos*/
+}
+
+.plan.estandar h3 {
+    color: #fff; /*Blanco para el título del plan estándar*/
+}
+
+/*Estilo para los textos de duración*/
+.plan.basico p.duracion {
+    color: #0066ff; /*Azul para los textos de duración en los planes básicos*/
+}
+
+.plan.estandar p.duracion {
+    color: #fff; /*Blanco para el texto de duración en el plan estándar*/
+}
+
+/*Estilo para los precios*/
+.precio {
+    font-size: 3rem;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #00cc99; /*Verde para todos los precios*/
+}
+
+/*Estilo para los detalles*/
+.detalles {
+    margin: 15px 0;
+    font-weight: bold; 
+}
+
+.plan.basico .detalles {
+    color: #0066ff; /*Azul para detalles de los planes básicos*/
+}
+
+.plan.estandar .detalles {
+    color: #fff; /*Blanco para detalles del plan estándar*/
+}
+
+/* Estilo para los botones */
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 80%;
+}
+
+.btn-comprar {
+    background: #00cc99;
+    color: #fff;
+    border: none;
+}
+
+.btn-comprar:hover {
+    background: #009977;
+}
+
+.btn-detalles {
+    background: #fff;
+    color: #00cc99;
+    border: 2px solid #00cc99;
+}
+
+.btn-detalles:hover {
+    background: #00cc99;
+    color: #fff;
+}
+
+
+.plan .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
